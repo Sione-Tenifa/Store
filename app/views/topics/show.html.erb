@@ -1,0 +1,5 @@
+<h1><%= @store.name %> - <%= @topic.name %></h1>
+<p><%= @topic.body %></p>
+<%= link_to 'Edit Topic', edit_store_topic_path([@store, @topic]) %>
+<%= link_to 'Delete Topic', [@store, @topic], method: :delete %>
+<%= link_to 'Back To Topics', store_topics_path(@store) %>

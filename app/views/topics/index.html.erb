@@ -1,0 +1,9 @@
+<h1>Click a product to view content</h1>
+<%= link_to 'Create a new topic', new_store_topic_path(@store) %>
+
+
+<ul>
+  <% @topics.each do |topic| %>
+    <li><%= link_to topic.name, [@store, topic] %></li>
+  <% end %>
+</ul>

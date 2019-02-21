@@ -1,0 +1,7 @@
+<h1>Click a Sub To View Content</h1>
+<%= link_to 'Create a New Store', new_store_path %>
+<ul>
+  <% @stores.each do |store| %>
+    <li><%= link_to store.name, store %></li>
+  <% end %>
+</ul>
